@@ -12,11 +12,11 @@ html {
   background-image: url("../design/mobile-design.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  align-items: center;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  height: 100vh;
   justify-content: center;
+  padding-top: 4rem;
   width: 100vw;
 }
 @media screen and (min-width: 576px) {
@@ -26,8 +26,10 @@ html {
 }
 
 .card {
+  border-radius: 0.8rem;
   display: flex;
   flex-direction: column;
+  opacity: 0.5;
   overflow: hidden;
   width: 30rem;
 }
@@ -39,34 +41,42 @@ html {
 }
 .card__col {
   box-sizing: border-box;
-  height: 10rem;
-  padding: 4.25rem;
+  height: 47rem;
+  padding: 4.4rem 4.5rem 4.5rem 4.4rem;
 }
 @media screen and (min-width: 576px) {
   .card__col {
     width: 33.33%;
   }
 }
-.card__icon {
+.card__img {
   display: block;
+  margin: 0 0 3.2rem;
 }
 .card__header {
   color: hsla(0, 0%, 100%, 0.75);
   font-family: "Big Shoulders Display", cursive;
   font-size: 4rem;
   font-weight: 700;
+  letter-spacing: -0.1rem;
+  margin: 0 0 2.4rem;
 }
 .card__copy {
   color: hsla(0, 0%, 100%, 0.75);
   font-family: "Lexend Deca", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 400;
+  line-height: 1.65;
+  margin: 0 0 7.8rem;
 }
 .card__btn {
+  border: none;
+  border-radius: 3rem;
   color: hsla(0, 0%, 100%, 0.75);
   font-family: "Lexend Deca", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 400;
+  padding: 1.4rem 3rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

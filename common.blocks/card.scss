@@ -3,8 +3,10 @@
 @import "fonts";
 
 .card {
+    border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
+    opacity: 0.5;
     overflow: hidden;
     width: 30rem;
 
@@ -16,15 +18,16 @@
     &__col {
         box-sizing: border-box;
         height: 47rem;
-        padding: 4.25rem;
+        padding: 4.4rem 4.5rem 4.5rem 4.4rem;
 
         @media screen and (min-width: $mobile) {
             width: 33.33%;
         }
     }
 
-    &__icon {
+    &__img {
         display: block;
+        margin: 0 0 3.2rem;
     }
 
     &__header {
@@ -35,6 +38,9 @@
             size: 4rem;
             weight: $bold;
         }
+
+        letter-spacing: -0.1rem;
+        margin: 0 0 2.4rem;
     }
 
     &__copy {
@@ -42,18 +48,25 @@
         
         font: {
             family: $font-stack-sans;
-            size: 1.25rem;
+            size: 1.4rem;
             weight: $regular;
         }
+
+        line-height: 1.65;
+        margin: 0 0 7.8rem;
     }
 
     &__btn {
+        border: none;
+        border-radius: 3rem;
         color: $transparent-white;
         
         font: {
             family: $font-stack-sans;
-            size: 1.25rem;
+            size: 1.4rem;
             weight: $regular;
         }
+
+        padding: 1.4rem 3rem;
     }
 }

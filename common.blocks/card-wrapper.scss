@@ -11,10 +11,10 @@
     background-image: url("../design/desktop-design.jpg");
   }
   
-  align-items: center;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  height: 100vh;
   justify-content: center;
+  padding-top: 4rem;
   width: 100vw;
 }
