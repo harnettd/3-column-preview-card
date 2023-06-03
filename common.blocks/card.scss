@@ -1,0 +1,59 @@
+@import "breakpoints";
+@import "colors";
+@import "fonts";
+
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 30rem;
+
+    @media screen and (min-width: $mobile) {
+        flex-direction: row;
+        width: 86rem;
+    }
+
+    &__col {
+        box-sizing: border-box;
+        height: 47rem;
+        padding: 4.25rem;
+
+        @media screen and (min-width: $mobile) {
+            width: 33.33%;
+        }
+    }
+
+    &__icon {
+        display: block;
+    }
+
+    &__header {
+        color: $transparent-white;
+
+        font: {
+            family: $font-stack-cursive;
+            size: 4rem;
+            weight: $bold;
+        }
+    }
+
+    &__copy {
+        color: $transparent-white;
+        
+        font: {
+            family: $font-stack-sans;
+            size: 1.25rem;
+            weight: $regular;
+        }
+    }
+
+    &__btn {
+        color: $transparent-white;
+        
+        font: {
+            family: $font-stack-sans;
+            size: 1.25rem;
+            weight: $regular;
+        }
+    }
+}

@@ -3,7 +3,70 @@ html {
 }
 
 .page {
+  background-color: hsl(0, 0%, 95%);
   margin: 0;
+}
+
+.card-wrapper {
+  background-color: hsl(0, 0%, 95%);
+  background-image: url("../design/mobile-design.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+@media screen and (min-width: 576px) {
+  .card-wrapper {
+    background-image: url("../design/desktop-design.jpg");
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 30rem;
+}
+@media screen and (min-width: 576px) {
+  .card {
+    flex-direction: row;
+    width: 86rem;
+  }
+}
+.card__col {
+  box-sizing: border-box;
+  height: 10rem;
+  padding: 4.25rem;
+}
+@media screen and (min-width: 576px) {
+  .card__col {
+    width: 33.33%;
+  }
+}
+.card__icon {
+  display: block;
+}
+.card__header {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.card__copy {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.card__btn {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=styles.css.map */
