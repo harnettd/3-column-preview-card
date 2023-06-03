@@ -9,7 +9,7 @@ html {
 
 .card-wrapper {
   background-color: hsl(0, 0%, 95%);
-  background-image: url("../design/mobile-design.jpg");
+  background-image: url("../design/desktop-design.jpg");
   background-position: center;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -19,34 +19,34 @@ html {
   padding-top: 4rem;
   width: 100vw;
 }
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 575px) {
   .card-wrapper {
-    background-image: url("../design/desktop-design.jpg");
+    background-image: url("../design/mobile-design.jpg");
   }
 }
 
 .card {
   border-radius: 0.8rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   opacity: 0.5;
   overflow: hidden;
-  width: 30rem;
+  width: 86rem;
 }
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 575px) {
   .card {
-    flex-direction: row;
-    width: 86rem;
+    flex-direction: column;
+    width: 30rem;
   }
 }
 .card__col {
   box-sizing: border-box;
-  height: 47rem;
   padding: 4.4rem 4.5rem 4.5rem 4.4rem;
+  width: 33.3%;
 }
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 575px) {
   .card__col {
-    width: 33.33%;
+    height: 47rem;
   }
 }
 .card__img {

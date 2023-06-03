@@ -5,23 +5,23 @@
 .card {
     border-radius: 0.8rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     opacity: 0.5;
     overflow: hidden;
-    width: 30rem;
+    width: 86rem;
 
-    @media screen and (min-width: $mobile) {
-        flex-direction: row;
-        width: 86rem;
+    @media screen and (max-width: $mobile) {
+        flex-direction: column;
+        width: 30rem;
     }
 
     &__col {
         box-sizing: border-box;
-        height: 47rem;
         padding: 4.4rem 4.5rem 4.5rem 4.4rem;
+        width: 33.3%;
 
-        @media screen and (min-width: $mobile) {
-            width: 33.33%;
+        @media screen and (max-width: $mobile) {
+            height: 47rem;
         }
     }
 
