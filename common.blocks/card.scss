@@ -25,6 +25,18 @@
         }
     }
 
+    &__col--sedans {
+        background-color: $bright-orange;
+    }
+
+    &__col--suvs {
+        background-color: $dark-cyan;
+    }
+
+    &__col--luxury {
+        background-color: $very-dark-cyan;
+    }
+
     &__img {
         display: block;
         margin: 0 0 3.2rem;
@@ -68,5 +80,17 @@
         }
 
         padding: 1.4rem 3rem;
+    }
+
+    &__btn--sedans {
+        color: $bright-orange;
+    }
+
+    &__btn--suvs {
+        color: $dark-cyan;
+    }
+
+    &__btn--luxury {
+        color: $very-dark-cyan;
     }
 }
