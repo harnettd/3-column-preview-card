@@ -2,19 +2,10 @@
 @import "colors";
 
 .card-wrapper {
+  align-items: center;
   background-color: $very-light-gray;
-  background-image: url("../design/desktop-design.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  
-  @media screen and (max-width: $mobile) {
-    background-image: url("../design/mobile-design.jpg");
-  }
-
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  height: 100vh;
   justify-content: center;
-  padding-top: 4rem;
-  width: 100vw;
 }

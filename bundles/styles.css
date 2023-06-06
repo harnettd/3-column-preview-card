@@ -8,28 +8,18 @@ html {
 }
 
 .card-wrapper {
+  align-items: center;
   background-color: hsl(0, 0%, 95%);
-  background-image: url("../design/desktop-design.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
   display: flex;
   flex-direction: row;
+  height: 100vh;
   justify-content: center;
-  padding-top: 4rem;
-  width: 100vw;
-}
-@media screen and (max-width: 917px) {
-  .card-wrapper {
-    background-image: url("../design/mobile-design.jpg");
-  }
 }
 
 .card {
   border-radius: 0.8rem;
   display: flex;
   flex-direction: row;
-  opacity: 0.5;
   overflow: hidden;
   width: 86rem;
 }
