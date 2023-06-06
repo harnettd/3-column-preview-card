@@ -1,0 +1,17 @@
+@import "colors";
+@import "fonts";
+
+.attribution {
+
+    font: {
+        family: $font-stack-sans;
+        size: 1.1rem;
+        weight: $regular;
+    }
+
+    text-align: center;
+}
+
+.attribution--link {
+    color: $attribution-blue;
+}

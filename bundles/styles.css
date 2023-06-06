@@ -112,4 +112,15 @@ html {
   cursor: pointer;
 }
 
+.attribution {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.attribution--link {
+  color: hsl(228, 45%, 44%);
+}
+
 /*# sourceMappingURL=styles.css.map */
