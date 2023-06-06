@@ -19,7 +19,7 @@ html {
   padding-top: 4rem;
   width: 100vw;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 917px) {
   .card-wrapper {
     background-image: url("../design/mobile-design.jpg");
   }
@@ -33,10 +33,10 @@ html {
   overflow: hidden;
   width: 86rem;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 917px) {
   .card {
     flex-direction: column;
-    width: 30rem;
+    width: 30.7rem;
   }
 }
 .card__col {
@@ -44,9 +44,10 @@ html {
   padding: 4.4rem 4.5rem 4.5rem 4.4rem;
   width: 33.3%;
 }
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 917px) {
   .card__col {
-    height: 47rem;
+    height: 41.4rem;
+    width: 100%;
   }
 }
 .card__col--sedans {
@@ -61,6 +62,11 @@ html {
 .card__img {
   display: block;
   margin: 0 0 3.2rem;
+}
+@media screen and (max-width: 917px) {
+  .card__img {
+    margin: 0 0 3.1rem;
+  }
 }
 .card__header {
   color: hsla(0, 0%, 100%, 0.75);
@@ -78,14 +84,18 @@ html {
   line-height: 1.65;
   margin: 0 0 7.8rem;
 }
+@media screen and (max-width: 917px) {
+  .card__copy {
+    margin: 0 0 2.5rem;
+  }
+}
 .card__btn {
-  border: none;
+  border: 0.2rem solid hsla(0, 0%, 100%, 0.75);
   border-radius: 3rem;
-  color: hsla(0, 0%, 100%, 0.75);
   font-family: "Lexend Deca", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
-  padding: 1.4rem 3rem;
+  padding: 1.2rem 2.8rem;
 }
 .card__btn--sedans {
   color: hsl(31, 77%, 52%);
@@ -95,6 +105,21 @@ html {
 }
 .card__btn--luxury {
   color: hsl(179, 100%, 13%);
+}
+.card__btn--sedans:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsla(0, 0%, 100%, 0.75);
+  cursor: pointer;
+}
+.card__btn--suvs:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsla(0, 0%, 100%, 0.75);
+  cursor: pointer;
+}
+.card__btn--luxury:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsla(0, 0%, 100%, 0.75);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

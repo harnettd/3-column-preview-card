@@ -12,7 +12,7 @@
 
     @media screen and (max-width: $mobile) {
         flex-direction: column;
-        width: 30rem;
+        width: 30.7rem;
     }
 
     &__col {
@@ -21,7 +21,8 @@
         width: 33.3%;
 
         @media screen and (max-width: $mobile) {
-            height: 47rem;
+            height: 41.4rem;
+            width: 100%;
         }
     }
 
@@ -40,6 +41,10 @@
     &__img {
         display: block;
         margin: 0 0 3.2rem;
+
+        @media screen and (max-width: $mobile) {
+            margin: 0 0 3.1rem;
+        }
     }
 
     &__header {
@@ -52,7 +57,7 @@
         }
 
         letter-spacing: -0.1rem;
-        margin: 0 0 2.4rem;
+        margin: 0 0 2.4rem;   
     }
 
     &__copy {
@@ -66,12 +71,15 @@
 
         line-height: 1.65;
         margin: 0 0 7.8rem;
+
+        @media screen and (max-width: $mobile) {
+            margin: 0 0 2.5rem;
+        }
     }
 
     &__btn {
-        border: none;
+        border: 0.2rem solid $transparent-white;
         border-radius: 3rem;
-        color: $transparent-white;
         
         font: {
             family: $font-stack-sans;
@@ -79,7 +87,7 @@
             weight: $regular;
         }
 
-        padding: 1.4rem 3rem;
+        padding: 1.2rem 2.8rem;
     }
 
     &__btn--sedans {
@@ -92,5 +100,23 @@
 
     &__btn--luxury {
         color: $very-dark-cyan;
+    }
+
+    &__btn--sedans:hover {
+        background-color: $bright-orange;
+        color: $transparent-white;
+        cursor: pointer;
+    }
+
+    &__btn--suvs:hover {
+        background-color: $dark-cyan;
+        color: $transparent-white;
+        cursor: pointer;
+    }
+
+    &__btn--luxury:hover {
+        background-color: $very-dark-cyan;
+        color: $transparent-white;
+        cursor: pointer;
     }
 }
