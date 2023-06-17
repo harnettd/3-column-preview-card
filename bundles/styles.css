@@ -21,12 +21,12 @@ html {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  max-width: 86rem;
+  max-width: 86.3rem;
 }
 @media screen and (max-width: 917px) {
   .card {
     flex-direction: column;
-    width: 30.7rem;
+    width: 30.6rem;
   }
 }
 .card__col {
@@ -59,7 +59,7 @@ html {
   }
 }
 .card__header {
-  color: hsla(0, 0%, 100%, 0.75);
+  color: hsl(0, 0%, 95%);
   font-family: "Big Shoulders Display", cursive;
   font-size: 4rem;
   font-weight: 700;
