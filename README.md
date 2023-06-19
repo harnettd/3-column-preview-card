@@ -48,7 +48,7 @@ Users should be able to:
 I completed this project mainly to practice techniques I've learned from previous projects. Also, I took the opportunity to implement some tips and tricks that I picked up from Frontend Mentor feedback as well as to implement a few simple upgrades. Namely,
 
 - I used the CSS trick `html {font-size: 62.5%}` to set `10rem` to `16px`. (Actually, in my code, I used the wrong percentage, but going back and recalculating all lengths seems like a lot of unnecessary work. I'll fix the typo in future projects.)
-- I set the card's width using `max-width: 100vw` and the card's height using `min-height: 100vh`. This is the first time I've used `vw` and `vh` units.
+- I set the card's width using `max-width: 100vw` and the card's height using `min-height: 100vh`. This is the first time I've used `vw` and `vh` units. *Update:* It turns out that, in the desktop design, the card is not vertically centred, and so, rather than vertically position the card with `align-items: center`, I used padding instead.  
 - I minified my CSS (even though it's hardly necessary for a project of this size).
 - To build the project, I used Make (although Grunt and Gulp are better suited to the task).
 
