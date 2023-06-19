@@ -23,7 +23,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size. TThere are desktop and mobile layouts.
-- See hover states for interactive elements.
+- See hover states for interactive elements. There are three buttons each with a hover state.
 
 ### Screenshots
 
@@ -40,27 +40,26 @@ Users should be able to:
 ### Built with
 
 - HTML5
-- CSS
-- Flexbox
+- CSS with Flexbox and BEM methodology
 - Sass
-- BEM
 
 ### What I learned
 
-I completed this project mainly to practice techniques I've learned working on previous projects. Also, I took the opportunity to implement some tips and tricks that I picked up from feedback on Frontend Mentor. Namely,
+I completed this project mainly to practice techniques I've learned from previous projects. Also, I took the opportunity to implement some tips and tricks that I picked up from Frontend Mentor feedback as well as to implement a few simple upgrades. Namely,
 
-- I used the CSS trick `html {font-size: 66.7%}` to set `10rem` to `15px`.
-- I set the card's width using `max-width: 100vw`. This is the first time I've used `vw` units.
-- I set the preview card's height using `min-height: 100vh`. This is the first time I've used `vh` units.
+- I used the CSS trick `html {font-size: 62.5%}` to set `10rem` to `16px`. (Actually, in my code, I used the wrong percentage, but going back and recalculating all lengths seems like a lot of unnecessary work. I'll fix the typo in future projects.)
+- I set the card's width using `max-width: 100vw` and the card's height using `min-height: 100vh`. This is the first time I've used `vw` and `vh` units.
+- I minified my CSS (even though it's hardly necessary for a project of this size).
+- To build the project, I used Make (although Grunt and Gulp are better suited to the task).
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- I plan to learn Grunt and Gulp to automate build processes on future projects.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [How to Minify CSS and Speed Up Your Website](https://blog.hubspot.com/website/minify-css) - I learned different ways to minify CSS from this webpage. I went with css-minify.
+- [Learn Makefiles With the tastiest examples](https://makefiletutorial.com/) - I hadn't written a Makefile for a while. This website served as a great refresher.
 
 ## Author
 
